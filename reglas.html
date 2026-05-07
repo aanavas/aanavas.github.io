@@ -36,6 +36,34 @@
       margin-bottom: 20px;
     }
 
+    .hero {
+      display: flex;
+      align-items: start;
+      gap: 20px;
+    }
+    
+    .hero-logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 22px;
+      box-shadow: 0 12px 30px rgba(15, 123, 63, 0.25);
+      flex-shrink: 0;
+    }
+    
+    .hero-title {
+      margin: 0;
+      font-size: 46px;
+      line-height: 1;
+      color: #111827;
+    }
+    
+    .hero-subtitle {
+      margin-top: 8px;
+      font-size: 20px;
+      color: #6b7280;
+      font-weight: 500;
+    }
+
     h1 {
       margin: 0 0 12px;
       font-size: 42px;
@@ -150,7 +178,15 @@
     <section class="card">
       <span class="badge">⚽ Kiniela</span>
 
-      <h1>Reglas del Juego</h1>
+      <div class="hero">
+        <img src="icon.png" alt="Kiniela Logo" class="hero-logo" />
+      
+        <div>
+          <h1 class="hero-title">Kiniela</h1>
+          <p class="hero-subtitle">Reglas del Juego</p>
+        </div>
+      </div>
+      
       <p>
         Participa, ingresa tus pronósticos, suma puntos y compite por los primeros lugares.
       </p>
